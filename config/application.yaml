@@ -1,0 +1,7 @@
+port: ":8080"
+
+url:
+  lh: "http://localhost:8080/"
+
+db:
+  url: "postgres://postgres:2412@localhost:5432/mydb?sslmode=disable"
