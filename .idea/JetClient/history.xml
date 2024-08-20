@@ -4,65 +4,8 @@
     <option name="requestHistoryStates">
       <list>
         <requestHistoryState>
-          <option name="dateTime" value="1724084772470" />
-          <option name="id" value="5dacabcf-92e4-4a8e-a1cc-1c906f05ae42" />
-          <option name="request">
-            <requestState>
-              <option name="body">
-                <bodyState>
-                  <option name="raw" value="{&#10;  &quot;long_url&quot;: &quot;https://rutube.ru/&quot;&#10;}" />
-                  <option name="type" value="JSON" />
-                </bodyState>
-              </option>
-              <option name="headers">
-                <list>
-                  <headerState>
-                    <option name="key" value="Content-Type" />
-                    <option name="value" value="application/json" />
-                  </headerState>
-                </list>
-              </option>
-              <option name="id" value="69b4fb3a-1fdd-416e-a6e3-8a0fae85a74d" />
-              <option name="method" value="POST" />
-              <option name="name" value="Draft (1)" />
-              <option name="url" value="http://localhost:8080/CreateShortUrl" />
-            </requestState>
-          </option>
-          <option name="response">
-            <responseState>
-              <option name="bodyBytesBase64" value="eyJzaG9ydF91cmwiOiJodHRwOi8vbG9jYWxob3N0OjgwODAvNmpBVlFNeEgifQ==" />
-              <option name="bodyString" value="{&#10;  &quot;short_url&quot;: &quot;http://localhost:8080/6jAVQMxH&quot;&#10;}" />
-              <option name="code" value="200" />
-              <option name="contentType" value="application/json; charset=utf-8" />
-              <option name="headers">
-                <list>
-                  <headerState>
-                    <option name="key" value="Content-Type" />
-                    <option name="value" value="application/json; charset=utf-8" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Date" />
-                    <option name="value" value="Mon, 19 Aug 2024 16:26:12 GMT" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Length" />
-                    <option name="value" value="46" />
-                  </headerState>
-                </list>
-              </option>
-              <option name="id" value="5dacabcf-92e4-4a8e-a1cc-1c906f05ae42" />
-              <option name="message" value="OK" />
-              <option name="prettyResponseType" value="JSON" />
-              <option name="rawBodyString" value="{&quot;short_url&quot;:&quot;http://localhost:8080/6jAVQMxH&quot;}" />
-              <option name="size" value="46" />
-              <option name="time" value="4" />
-            </responseState>
-          </option>
-          <option name="workspaceId" value="drafts" />
-        </requestHistoryState>
-        <requestHistoryState>
-          <option name="dateTime" value="1724084778158" />
-          <option name="id" value="44a58b9c-65a6-4d93-9d42-a5b7f6944507" />
+          <option name="dateTime" value="1724149446928" />
+          <option name="id" value="2d2831ad-e419-4f1b-b0a5-4625fea9b379" />
           <option name="request">
             <requestState>
               <option name="body">
@@ -99,7 +42,7 @@
                   </headerState>
                   <headerState>
                     <option name="key" value="Date" />
-                    <option name="value" value="Mon, 19 Aug 2024 16:26:18 GMT" />
+                    <option name="value" value="Tue, 20 Aug 2024 10:24:06 GMT" />
                   </headerState>
                   <headerState>
                     <option name="key" value="Content-Length" />
@@ -107,11 +50,1088 @@
                   </headerState>
                 </list>
               </option>
-              <option name="id" value="44a58b9c-65a6-4d93-9d42-a5b7f6944507" />
+              <option name="id" value="2d2831ad-e419-4f1b-b0a5-4625fea9b379" />
               <option name="message" value="OK" />
               <option name="prettyResponseType" value="JSON" />
               <option name="rawBodyString" value="{&quot;long_url&quot;:&quot;https://rutube.ru/&quot;}" />
               <option name="size" value="33" />
+              <option name="time" value="1" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1724149447390" />
+          <option name="id" value="d489c18c-100f-44fe-8908-b3d28e2ee665" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;short_url&quot;: &quot;http://localhost:8080/6jAVQMxH&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="84cef6b5-0b95-41b8-b6c6-5be771335d86" />
+              <option name="method" value="GET" />
+              <option name="name" value="Draft" />
+              <option name="url" value="http://localhost:8080/GetLongUrl" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJsb25nX3VybCI6Imh0dHBzOi8vcnV0dWJlLnJ1LyJ9" />
+              <option name="bodyString" value="{&#10;  &quot;long_url&quot;: &quot;https://rutube.ru/&quot;&#10;}" />
+              <option name="code" value="200" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Tue, 20 Aug 2024 10:24:07 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="33" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="d489c18c-100f-44fe-8908-b3d28e2ee665" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;long_url&quot;:&quot;https://rutube.ru/&quot;}" />
+              <option name="size" value="33" />
+              <option name="time" value="1" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1724149447819" />
+          <option name="id" value="7cfb2da2-4c56-403c-b2f1-7f5823f2495b" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;short_url&quot;: &quot;http://localhost:8080/6jAVQMxH&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="84cef6b5-0b95-41b8-b6c6-5be771335d86" />
+              <option name="method" value="GET" />
+              <option name="name" value="Draft" />
+              <option name="url" value="http://localhost:8080/GetLongUrl" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJsb25nX3VybCI6Imh0dHBzOi8vcnV0dWJlLnJ1LyJ9" />
+              <option name="bodyString" value="{&#10;  &quot;long_url&quot;: &quot;https://rutube.ru/&quot;&#10;}" />
+              <option name="code" value="200" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Tue, 20 Aug 2024 10:24:07 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="33" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="7cfb2da2-4c56-403c-b2f1-7f5823f2495b" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;long_url&quot;:&quot;https://rutube.ru/&quot;}" />
+              <option name="size" value="33" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1724149664299" />
+          <option name="id" value="33064bd2-f182-4b33-ab95-fe92cb996c60" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;short_url&quot;: &quot;http://localhost:8080/6jAVQMxH&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="84cef6b5-0b95-41b8-b6c6-5be771335d86" />
+              <option name="method" value="GET" />
+              <option name="name" value="Draft" />
+              <option name="url" value="http://localhost:8080/GetLongUrl" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJsb25nX3VybCI6Imh0dHBzOi8vcnV0dWJlLnJ1LyJ9" />
+              <option name="bodyString" value="{&#10;  &quot;long_url&quot;: &quot;https://rutube.ru/&quot;&#10;}" />
+              <option name="code" value="200" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Tue, 20 Aug 2024 10:27:44 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="33" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="33064bd2-f182-4b33-ab95-fe92cb996c60" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;long_url&quot;:&quot;https://rutube.ru/&quot;}" />
+              <option name="size" value="33" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1724149695930" />
+          <option name="id" value="a92c013c-0f98-4ff2-acfb-fc0a0d8a5c7c" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;short_url&quot;: &quot;http://localhost:8080/6jAVQMxH&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="84cef6b5-0b95-41b8-b6c6-5be771335d86" />
+              <option name="method" value="GET" />
+              <option name="name" value="Draft" />
+              <option name="url" value="http://localhost:8080/GetLongUrl" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJsb25nX3VybCI6Imh0dHBzOi8vcnV0dWJlLnJ1LyJ9" />
+              <option name="bodyString" value="{&#10;  &quot;long_url&quot;: &quot;https://rutube.ru/&quot;&#10;}" />
+              <option name="code" value="200" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Tue, 20 Aug 2024 10:28:15 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="33" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="a92c013c-0f98-4ff2-acfb-fc0a0d8a5c7c" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;long_url&quot;:&quot;https://rutube.ru/&quot;}" />
+              <option name="size" value="33" />
+              <option name="time" value="1" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1724151090010" />
+          <option name="id" value="a99f030e-2102-426d-8846-4ebefba9c2e4" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;short_url&quot;: &quot;http://localhost:8080/6jAVQMxH&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="84cef6b5-0b95-41b8-b6c6-5be771335d86" />
+              <option name="method" value="GET" />
+              <option name="name" value="Draft" />
+              <option name="url" value="http://localhost:8080/GetLongUrl" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJsb25nX3VybCI6Imh0dHBzOi8vcnV0dWJlLnJ1LyJ9" />
+              <option name="bodyString" value="{&#10;  &quot;long_url&quot;: &quot;https://rutube.ru/&quot;&#10;}" />
+              <option name="code" value="200" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Tue, 20 Aug 2024 10:51:30 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="33" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="a99f030e-2102-426d-8846-4ebefba9c2e4" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;long_url&quot;:&quot;https://rutube.ru/&quot;}" />
+              <option name="size" value="33" />
+              <option name="time" value="1" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1724151151559" />
+          <option name="id" value="7d373e37-b2d5-4f2c-930d-970fcc7aaa61" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;short_url&quot;: &quot;http://localhost:8080/32CwdLQR&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="84cef6b5-0b95-41b8-b6c6-5be771335d86" />
+              <option name="method" value="GET" />
+              <option name="name" value="Draft" />
+              <option name="url" value="http://localhost:8080/GetLongUrl" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJsb25nX3VybCI6Imh0dHBzOi8vbXVzaWMueWFuZGV4LnJ1L2hvbWUifQ==" />
+              <option name="bodyString" value="{&#10;  &quot;long_url&quot;: &quot;https://music.yandex.ru/home&quot;&#10;}" />
+              <option name="code" value="200" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Tue, 20 Aug 2024 10:52:31 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="43" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="7d373e37-b2d5-4f2c-930d-970fcc7aaa61" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;long_url&quot;:&quot;https://music.yandex.ru/home&quot;}" />
+              <option name="size" value="43" />
+              <option name="time" value="1" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1724151238093" />
+          <option name="id" value="75005139-ef01-44b8-a574-07144497d62f" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;long_url&quot;: &quot;https://music.yandex.ru/home&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="69b4fb3a-1fdd-416e-a6e3-8a0fae85a74d" />
+              <option name="method" value="POST" />
+              <option name="name" value="Draft (1)" />
+              <option name="url" value="http://localhost:8080/CreateShortUrl" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJzaG9ydF91cmwiOiJodHRwOi8vbG9jYWxob3N0OjgwODAvaHR0cHM6Ly9tdXNpYy55YW5kZXgucnUvaG9tZSJ9" />
+              <option name="bodyString" value="{&#10;  &quot;short_url&quot;: &quot;http://localhost:8080/https://music.yandex.ru/home&quot;&#10;}" />
+              <option name="code" value="200" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Tue, 20 Aug 2024 10:53:58 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="66" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="75005139-ef01-44b8-a574-07144497d62f" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;short_url&quot;:&quot;http://localhost:8080/https://music.yandex.ru/home&quot;}" />
+              <option name="size" value="66" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1724151238853" />
+          <option name="id" value="324c2ad0-876e-4fd7-90ef-358cc38a5f5c" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;long_url&quot;: &quot;https://music.yandex.ru/home&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="69b4fb3a-1fdd-416e-a6e3-8a0fae85a74d" />
+              <option name="method" value="POST" />
+              <option name="name" value="Draft (1)" />
+              <option name="url" value="http://localhost:8080/CreateShortUrl" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJzaG9ydF91cmwiOiJodHRwOi8vbG9jYWxob3N0OjgwODAvaHR0cHM6Ly9tdXNpYy55YW5kZXgucnUvaG9tZSJ9" />
+              <option name="bodyString" value="{&#10;  &quot;short_url&quot;: &quot;http://localhost:8080/https://music.yandex.ru/home&quot;&#10;}" />
+              <option name="code" value="200" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Tue, 20 Aug 2024 10:53:58 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="66" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="324c2ad0-876e-4fd7-90ef-358cc38a5f5c" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;short_url&quot;:&quot;http://localhost:8080/https://music.yandex.ru/home&quot;}" />
+              <option name="size" value="66" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1724151239477" />
+          <option name="id" value="1a99ac38-bff0-4ae7-abf3-acf9a772b589" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;long_url&quot;: &quot;https://music.yandex.ru/home&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="69b4fb3a-1fdd-416e-a6e3-8a0fae85a74d" />
+              <option name="method" value="POST" />
+              <option name="name" value="Draft (1)" />
+              <option name="url" value="http://localhost:8080/CreateShortUrl" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJzaG9ydF91cmwiOiJodHRwOi8vbG9jYWxob3N0OjgwODAvaHR0cHM6Ly9tdXNpYy55YW5kZXgucnUvaG9tZSJ9" />
+              <option name="bodyString" value="{&#10;  &quot;short_url&quot;: &quot;http://localhost:8080/https://music.yandex.ru/home&quot;&#10;}" />
+              <option name="code" value="200" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Tue, 20 Aug 2024 10:53:59 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="66" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="1a99ac38-bff0-4ae7-abf3-acf9a772b589" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;short_url&quot;:&quot;http://localhost:8080/https://music.yandex.ru/home&quot;}" />
+              <option name="size" value="66" />
+              <option name="time" value="1" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1724151239890" />
+          <option name="id" value="0460ab69-62e5-409e-aa97-8f25bd535fe4" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;long_url&quot;: &quot;https://music.yandex.ru/home&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="69b4fb3a-1fdd-416e-a6e3-8a0fae85a74d" />
+              <option name="method" value="POST" />
+              <option name="name" value="Draft (1)" />
+              <option name="url" value="http://localhost:8080/CreateShortUrl" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJzaG9ydF91cmwiOiJodHRwOi8vbG9jYWxob3N0OjgwODAvaHR0cHM6Ly9tdXNpYy55YW5kZXgucnUvaG9tZSJ9" />
+              <option name="bodyString" value="{&#10;  &quot;short_url&quot;: &quot;http://localhost:8080/https://music.yandex.ru/home&quot;&#10;}" />
+              <option name="code" value="200" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Tue, 20 Aug 2024 10:53:59 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="66" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="0460ab69-62e5-409e-aa97-8f25bd535fe4" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;short_url&quot;:&quot;http://localhost:8080/https://music.yandex.ru/home&quot;}" />
+              <option name="size" value="66" />
+              <option name="time" value="1" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1724151240280" />
+          <option name="id" value="57cdb684-f1d2-472f-968f-09d532971103" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;long_url&quot;: &quot;https://music.yandex.ru/home&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="69b4fb3a-1fdd-416e-a6e3-8a0fae85a74d" />
+              <option name="method" value="POST" />
+              <option name="name" value="Draft (1)" />
+              <option name="url" value="http://localhost:8080/CreateShortUrl" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJzaG9ydF91cmwiOiJodHRwOi8vbG9jYWxob3N0OjgwODAvaHR0cHM6Ly9tdXNpYy55YW5kZXgucnUvaG9tZSJ9" />
+              <option name="bodyString" value="{&#10;  &quot;short_url&quot;: &quot;http://localhost:8080/https://music.yandex.ru/home&quot;&#10;}" />
+              <option name="code" value="200" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Tue, 20 Aug 2024 10:54:00 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="66" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="57cdb684-f1d2-472f-968f-09d532971103" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;short_url&quot;:&quot;http://localhost:8080/https://music.yandex.ru/home&quot;}" />
+              <option name="size" value="66" />
+              <option name="time" value="1" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1724151240661" />
+          <option name="id" value="e03b8aab-1c30-43d0-bc06-f96d6d2ba712" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;long_url&quot;: &quot;https://music.yandex.ru/home&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="69b4fb3a-1fdd-416e-a6e3-8a0fae85a74d" />
+              <option name="method" value="POST" />
+              <option name="name" value="Draft (1)" />
+              <option name="url" value="http://localhost:8080/CreateShortUrl" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJzaG9ydF91cmwiOiJodHRwOi8vbG9jYWxob3N0OjgwODAvaHR0cHM6Ly9tdXNpYy55YW5kZXgucnUvaG9tZSJ9" />
+              <option name="bodyString" value="{&#10;  &quot;short_url&quot;: &quot;http://localhost:8080/https://music.yandex.ru/home&quot;&#10;}" />
+              <option name="code" value="200" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Tue, 20 Aug 2024 10:54:00 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="66" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="e03b8aab-1c30-43d0-bc06-f96d6d2ba712" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;short_url&quot;:&quot;http://localhost:8080/https://music.yandex.ru/home&quot;}" />
+              <option name="size" value="66" />
+              <option name="time" value="1" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1724151241053" />
+          <option name="id" value="7b8af4cd-5aca-4263-86c1-74b498db46ae" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;long_url&quot;: &quot;https://music.yandex.ru/home&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="69b4fb3a-1fdd-416e-a6e3-8a0fae85a74d" />
+              <option name="method" value="POST" />
+              <option name="name" value="Draft (1)" />
+              <option name="url" value="http://localhost:8080/CreateShortUrl" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJzaG9ydF91cmwiOiJodHRwOi8vbG9jYWxob3N0OjgwODAvaHR0cHM6Ly9tdXNpYy55YW5kZXgucnUvaG9tZSJ9" />
+              <option name="bodyString" value="{&#10;  &quot;short_url&quot;: &quot;http://localhost:8080/https://music.yandex.ru/home&quot;&#10;}" />
+              <option name="code" value="200" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Tue, 20 Aug 2024 10:54:01 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="66" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="7b8af4cd-5aca-4263-86c1-74b498db46ae" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;short_url&quot;:&quot;http://localhost:8080/https://music.yandex.ru/home&quot;}" />
+              <option name="size" value="66" />
+              <option name="time" value="1" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1724151241461" />
+          <option name="id" value="49794057-b9b5-4aa7-a30a-b2bd0363bff2" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;long_url&quot;: &quot;https://music.yandex.ru/home&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="69b4fb3a-1fdd-416e-a6e3-8a0fae85a74d" />
+              <option name="method" value="POST" />
+              <option name="name" value="Draft (1)" />
+              <option name="url" value="http://localhost:8080/CreateShortUrl" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJzaG9ydF91cmwiOiJodHRwOi8vbG9jYWxob3N0OjgwODAvaHR0cHM6Ly9tdXNpYy55YW5kZXgucnUvaG9tZSJ9" />
+              <option name="bodyString" value="{&#10;  &quot;short_url&quot;: &quot;http://localhost:8080/https://music.yandex.ru/home&quot;&#10;}" />
+              <option name="code" value="200" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Tue, 20 Aug 2024 10:54:01 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="66" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="49794057-b9b5-4aa7-a30a-b2bd0363bff2" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;short_url&quot;:&quot;http://localhost:8080/https://music.yandex.ru/home&quot;}" />
+              <option name="size" value="66" />
+              <option name="time" value="1" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1724151241836" />
+          <option name="id" value="58e6e863-b2df-432a-8d23-c08d157bf71d" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;long_url&quot;: &quot;https://music.yandex.ru/home&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="69b4fb3a-1fdd-416e-a6e3-8a0fae85a74d" />
+              <option name="method" value="POST" />
+              <option name="name" value="Draft (1)" />
+              <option name="url" value="http://localhost:8080/CreateShortUrl" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJzaG9ydF91cmwiOiJodHRwOi8vbG9jYWxob3N0OjgwODAvaHR0cHM6Ly9tdXNpYy55YW5kZXgucnUvaG9tZSJ9" />
+              <option name="bodyString" value="{&#10;  &quot;short_url&quot;: &quot;http://localhost:8080/https://music.yandex.ru/home&quot;&#10;}" />
+              <option name="code" value="200" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Tue, 20 Aug 2024 10:54:01 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="66" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="58e6e863-b2df-432a-8d23-c08d157bf71d" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;short_url&quot;:&quot;http://localhost:8080/https://music.yandex.ru/home&quot;}" />
+              <option name="size" value="66" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1724151242226" />
+          <option name="id" value="0f2c00b1-1306-49be-bd6c-202f88bfdbf5" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;long_url&quot;: &quot;https://music.yandex.ru/home&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="69b4fb3a-1fdd-416e-a6e3-8a0fae85a74d" />
+              <option name="method" value="POST" />
+              <option name="name" value="Draft (1)" />
+              <option name="url" value="http://localhost:8080/CreateShortUrl" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJzaG9ydF91cmwiOiJodHRwOi8vbG9jYWxob3N0OjgwODAvaHR0cHM6Ly9tdXNpYy55YW5kZXgucnUvaG9tZSJ9" />
+              <option name="bodyString" value="{&#10;  &quot;short_url&quot;: &quot;http://localhost:8080/https://music.yandex.ru/home&quot;&#10;}" />
+              <option name="code" value="200" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Tue, 20 Aug 2024 10:54:02 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="66" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="0f2c00b1-1306-49be-bd6c-202f88bfdbf5" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;short_url&quot;:&quot;http://localhost:8080/https://music.yandex.ru/home&quot;}" />
+              <option name="size" value="66" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1724151243759" />
+          <option name="id" value="9a762e2c-e875-432d-a208-da2aa4604a39" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;short_url&quot;: &quot;http://localhost:8080/32CwdLQR&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="84cef6b5-0b95-41b8-b6c6-5be771335d86" />
+              <option name="method" value="GET" />
+              <option name="name" value="Draft" />
+              <option name="url" value="http://localhost:8080/GetLongUrl" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJsb25nX3VybCI6Imh0dHBzOi8vbXVzaWMueWFuZGV4LnJ1L2hvbWUifQ==" />
+              <option name="bodyString" value="{&#10;  &quot;long_url&quot;: &quot;https://music.yandex.ru/home&quot;&#10;}" />
+              <option name="code" value="200" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Tue, 20 Aug 2024 10:54:03 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="43" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="9a762e2c-e875-432d-a208-da2aa4604a39" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;long_url&quot;:&quot;https://music.yandex.ru/home&quot;}" />
+              <option name="size" value="43" />
+              <option name="time" value="1" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1724151244234" />
+          <option name="id" value="a9aed084-77c3-47fb-9baf-640172671794" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;short_url&quot;: &quot;http://localhost:8080/32CwdLQR&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="84cef6b5-0b95-41b8-b6c6-5be771335d86" />
+              <option name="method" value="GET" />
+              <option name="name" value="Draft" />
+              <option name="url" value="http://localhost:8080/GetLongUrl" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJsb25nX3VybCI6Imh0dHBzOi8vbXVzaWMueWFuZGV4LnJ1L2hvbWUifQ==" />
+              <option name="bodyString" value="{&#10;  &quot;long_url&quot;: &quot;https://music.yandex.ru/home&quot;&#10;}" />
+              <option name="code" value="200" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Tue, 20 Aug 2024 10:54:04 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="43" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="a9aed084-77c3-47fb-9baf-640172671794" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;long_url&quot;:&quot;https://music.yandex.ru/home&quot;}" />
+              <option name="size" value="43" />
+              <option name="time" value="1" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1724151244708" />
+          <option name="id" value="cb574de2-6fd0-454a-aff0-ed59fde277bb" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;short_url&quot;: &quot;http://localhost:8080/32CwdLQR&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="84cef6b5-0b95-41b8-b6c6-5be771335d86" />
+              <option name="method" value="GET" />
+              <option name="name" value="Draft" />
+              <option name="url" value="http://localhost:8080/GetLongUrl" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJsb25nX3VybCI6Imh0dHBzOi8vbXVzaWMueWFuZGV4LnJ1L2hvbWUifQ==" />
+              <option name="bodyString" value="{&#10;  &quot;long_url&quot;: &quot;https://music.yandex.ru/home&quot;&#10;}" />
+              <option name="code" value="200" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Tue, 20 Aug 2024 10:54:04 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="43" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="cb574de2-6fd0-454a-aff0-ed59fde277bb" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;long_url&quot;:&quot;https://music.yandex.ru/home&quot;}" />
+              <option name="size" value="43" />
               <option name="time" value="1" />
             </responseState>
           </option>

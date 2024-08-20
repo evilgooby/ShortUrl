@@ -5,57 +5,72 @@ import (
 	"ShortUrl/internal/repository/memory"
 	"ShortUrl/internal/repository/postgres"
 	"github.com/gin-gonic/gin"
+	"github.com/spf13/viper"
+	"log"
+	"os"
 )
 
-func AddShortUrl(c *gin.Context, longUrl string, flagD bool) (string, error) {
+func AddShortUrl(c *gin.Context, longUrl string) (string, error) {
 	var shortUrl string
-	shortUrl = VerifyShortUrl(longUrl, flagD)
-	if shortUrl != "" {
-		return shortUrl, nil
+	host := viper.GetString("url.lh")
+	flagD := os.Getenv("FLAG_D")
+	shortUrl, err := VerifyShortUrl(longUrl)
+	if err != nil {
+		log.Println("URL not found in database")
 	}
-	shortUrl, err := generator.GenerateShortLink(longUrl)
+	if shortUrl != "" {
+		return host + shortUrl, nil
+	}
+	shortUrl, err = generator.GenerateShortLink(longUrl)
 	if err != nil {
 		return "", c.Error(err)
 	}
-	if !flagD {
+	if flagD != "true" {
 		if err = postgres.AddInPostgres(shortUrl, longUrl); err != nil {
 			return "", c.Error(err)
 		}
 	} else {
 		memory.SaveUrl(shortUrl, longUrl)
 	}
-	return shortUrl, nil
+
+	return host + shortUrl, nil
 }
 
-func GetLongUrl(c *gin.Context, shortUrl string, flagD bool) (string, error) {
-	var longUrl string
-	if !flagD {
+func GetLongUrl(c *gin.Context, shortUrl string) (string, error) {
+	flagD := os.Getenv("FLAG_D")
+	if flagD != "true" {
 		url, err := postgres.GetLongUrlPostgres(shortUrl)
 		if err != nil {
 			return "", c.Error(err)
 		}
-		longUrl = url
+		return url, nil
 	} else {
 		url, err := memory.GetLongUrlMemory(shortUrl)
 		if err != nil {
 			return "", c.Error(err)
 		}
-		longUrl = url
+		return url, nil
 	}
-	return longUrl, nil
 }
 
-func VerifyShortUrl(longUrl string, flagD bool) string {
-	if !flagD {
-		str, _ := postgres.GetShortUrlPostgres(longUrl)
+func VerifyShortUrl(longUrl string) (string, error) {
+	flagD := os.Getenv("FLAG_D")
+	if flagD != "true" {
+		str, err := postgres.GetShortUrlPostgres(longUrl)
 		if str != "" {
-			return str
+			return str, nil
+		}
+		if err != nil {
+			return "", err
 		}
 	} else {
-		str := memory.GetShortUrl(longUrl)
+		str, err := memory.GetShortUrl(longUrl)
 		if str != "" {
-			return str
+			return str, nil
+		}
+		if err != nil {
+			return "", err
 		}
 	}
-	return ""
+	return "", nil
 }

@@ -1,7 +1,6 @@
 package config
 
 import (
-	"ShortUrl/internal/middleware/errorHandling"
 	"database/sql"
 	"github.com/spf13/viper"
 	"log"
@@ -45,11 +44,11 @@ func InitializeStorePostgres() *StoragePostgres {
 func TableExists(db *sql.DB, tableName string) (bool, error) {
 	stmt, err := db.Prepare(verifyTable)
 	if err != nil {
-		return false, errorHandling.ErrDB
+		return false, nil
 	}
 	var exists bool
 	if err = stmt.QueryRow(tableName).Scan(&exists); err != nil {
-		return false, errorHandling.ErrDB
+		return false, nil
 	}
 	return exists, nil
 }

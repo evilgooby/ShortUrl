@@ -1,36 +1,31 @@
 package memory
 
 import (
+	"ShortUrl/config"
 	"ShortUrl/internal/middleware/errorHandling"
 )
 
-var (
-	storeMemory = &StorageMemory{
-		Data: make(map[string]string),
-	}
-)
-
-type StorageMemory struct {
-	Data map[string]string
-}
-
 func SaveUrl(shortUrl string, originalUrl string) {
-	storeMemory.Data[shortUrl] = originalUrl
+	config.StoreMemory.Cache.Add(shortUrl, originalUrl)
 }
 
 func GetLongUrlMemory(shortUrl string) (string, error) {
-	val, ok := storeMemory.Data[shortUrl]
+	val, ok := config.StoreMemory.Cache.Get(shortUrl)
 	if !ok {
 		return "", errorHandling.ErrNotFoundUrl
 	}
-	return val, nil
+	return val.(string), nil
 }
 
-func GetShortUrl(longUrl string) string {
-	for k, v := range storeMemory.Data {
-		if v == longUrl {
-			return k
+func GetShortUrl(longUrl string) (string, error) {
+	keys := config.StoreMemory.Cache.Keys()
+	for _, key := range keys {
+		val, ok := config.StoreMemory.Cache.Get(key)
+		if ok {
+			if val.(string) == longUrl {
+				return val.(string), nil
+			}
 		}
 	}
-	return ""
+	return "", errorHandling.ErrNotFoundUrl
 }

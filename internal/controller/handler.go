@@ -4,7 +4,6 @@ import (
 	"ShortUrl/internal/middleware/errorHandling"
 	"ShortUrl/internal/middleware/handlingUrl"
 	"github.com/gin-gonic/gin"
-	"github.com/spf13/viper"
 	"net/http"
 )
 
@@ -21,20 +20,19 @@ func CreateShortUrl(c *gin.Context) {
 		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
 		return
 	}
-	shortUrl, err := handlingUrl.AddShortUrl(c, creationRequest.LongUrl, FlagsD.D)
+	shortUrl, err := handlingUrl.AddShortUrl(c, creationRequest.LongUrl)
 	if err != nil {
 		errorHandling.ErrorHandler(c)
 		return
 	}
-	host := viper.GetString("url.lh")
 	c.JSON(200, gin.H{
-		"short_url": host + shortUrl,
+		"short_url": shortUrl,
 	})
 }
 
 func HandleShortUrlRedirect(c *gin.Context) {
 	shortUrl := c.Param("RedirectShortUrl")
-	longUrl, err := handlingUrl.GetLongUrl(c, shortUrl, FlagsD.D)
+	longUrl, err := handlingUrl.GetLongUrl(c, shortUrl)
 	if err != nil {
 		errorHandling.ErrorHandler(c)
 		return
@@ -48,7 +46,7 @@ func HandleGetShortUrl(c *gin.Context) {
 		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
 		return
 	}
-	longUrl, err := handlingUrl.GetLongUrl(c, creationRequest.ShortUrl[22:], FlagsD.D)
+	longUrl, err := handlingUrl.GetLongUrl(c, creationRequest.ShortUrl[22:])
 	if err != nil {
 		errorHandling.ErrorHandler(c)
 		return

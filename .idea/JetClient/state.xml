@@ -8,7 +8,7 @@
             <requestState>
               <option name="body">
                 <bodyState>
-                  <option name="raw" value="{&#10;  &quot;short_url&quot;: &quot;http://localhost:8080/6jAVQMxH&quot;&#10;}" />
+                  <option name="raw" value="{&#10;  &quot;short_url&quot;: &quot;http://localhost:8080/32CwdLQR&quot;&#10;}" />
                   <option name="type" value="JSON" />
                 </bodyState>
               </option>
@@ -28,7 +28,7 @@
             <requestState>
               <option name="body">
                 <bodyState>
-                  <option name="raw" value="{&#10;  &quot;long_url&quot;: &quot;https://rutube.ru/&quot;&#10;}" />
+                  <option name="raw" value="{&#10;  &quot;long_url&quot;: &quot;https://music.yandex.ru/home&quot;&#10;}" />
                   <option name="type" value="JSON" />
                 </bodyState>
               </option>

@@ -34,7 +34,7 @@ func GetLongUrlPostgres(shortUrl string) (string, error) {
 func GetShortUrlPostgres(longUrl string) (string, error) {
 	var shortUrl string
 	if err := config.StorePostgres.PostgresDB.QueryRow(getShortUrl, longUrl).Scan(&shortUrl); err != nil {
-		return "", errorHandling.ErrDB
+		return "", err
 	}
 	return shortUrl, nil
 }
