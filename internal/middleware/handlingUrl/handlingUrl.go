@@ -10,6 +10,7 @@ import (
 	"os"
 )
 
+// Генерируем и обрабатываем сокращенную ссылку
 func AddShortUrl(c *gin.Context, longUrl string) (string, error) {
 	var shortUrl string
 	host := viper.GetString("url.lh")
@@ -36,6 +37,7 @@ func AddShortUrl(c *gin.Context, longUrl string) (string, error) {
 	return host + shortUrl, nil
 }
 
+// Возвращаем длинную ссылку из базы данных или памяти
 func GetLongUrl(c *gin.Context, shortUrl string) (string, error) {
 	flagD := os.Getenv("FLAG_D")
 	if flagD != "true" {
@@ -53,6 +55,7 @@ func GetLongUrl(c *gin.Context, shortUrl string) (string, error) {
 	}
 }
 
+// Проверка есть ли в базе данных ссылка. Если да возвращаем её
 func VerifyShortUrl(longUrl string) (string, error) {
 	flagD := os.Getenv("FLAG_D")
 	if flagD != "true" {

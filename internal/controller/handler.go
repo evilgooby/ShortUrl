@@ -14,6 +14,7 @@ type UrlShortCreationRequest struct {
 	ShortUrl string `json:"short_url" binding:"required"`
 }
 
+// Обработка создания сокращенной ссылки
 func CreateShortUrl(c *gin.Context) {
 	var creationRequest UrlLongCreationRequest
 	if err := c.ShouldBindJSON(&creationRequest); err != nil {
@@ -30,6 +31,7 @@ func CreateShortUrl(c *gin.Context) {
 	})
 }
 
+// Обработка перенаправления на адрес ссылки
 func HandleShortUrlRedirect(c *gin.Context) {
 	shortUrl := c.Param("RedirectShortUrl")
 	longUrl, err := handlingUrl.GetLongUrl(c, shortUrl)
@@ -40,6 +42,7 @@ func HandleShortUrlRedirect(c *gin.Context) {
 	c.Redirect(302, longUrl)
 }
 
+// Обработка получения длинной ссылки
 func HandleGetShortUrl(c *gin.Context) {
 	var creationRequest UrlShortCreationRequest
 	if err := c.ShouldBindJSON(&creationRequest); err != nil {

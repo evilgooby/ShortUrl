@@ -8,6 +8,7 @@ import (
 	"math/big"
 )
 
+// генерация короткой ссылки (8 символов)
 func GenerateShortLink(initialLink string) (string, error) {
 	urlHashBytes := sha256.Sum256([]byte(initialLink))
 	generatedNumber := new(big.Int).SetBytes(urlHashBytes[:]).Uint64()

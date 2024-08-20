@@ -5,10 +5,12 @@ import (
 	"ShortUrl/internal/middleware/errorHandling"
 )
 
-func SaveUrl(shortUrl string, originalUrl string) {
-	config.StoreMemory.Cache.Add(shortUrl, originalUrl)
+// Сохранение данных в кэш
+func SaveUrl(shortUrl string, longUrl string) {
+	config.StoreMemory.Cache.Add(shortUrl, longUrl)
 }
 
+// Получение длинной ссылки из кэша
 func GetLongUrlMemory(shortUrl string) (string, error) {
 	val, ok := config.StoreMemory.Cache.Get(shortUrl)
 	if !ok {
@@ -17,6 +19,7 @@ func GetLongUrlMemory(shortUrl string) (string, error) {
 	return val.(string), nil
 }
 
+// Получение короткой ссылки из кэша
 func GetShortUrl(longUrl string) (string, error) {
 	keys := config.StoreMemory.Cache.Keys()
 	for _, key := range keys {

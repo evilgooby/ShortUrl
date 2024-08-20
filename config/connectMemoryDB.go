@@ -11,6 +11,7 @@ type LRUCache struct {
 	Cache *lru.Cache
 }
 
+// Создание кэша и указание количество максимальных ячеек для хранения данных
 func NewLRUCache() *LRUCache {
 	cache, err := lru.New(10)
 	if err != nil {

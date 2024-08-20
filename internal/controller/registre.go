@@ -6,6 +6,7 @@ import (
 	"log"
 )
 
+// Регистрация маршрутов
 func Registry() {
 	r := gin.Default()
 	r.POST("/CreateShortUrl", CreateShortUrl)

@@ -13,6 +13,7 @@ var (
 	ErrNotFoundUrl         = fmt.Errorf("not found url")
 )
 
+// обрабатываем кастомные ошибки
 func ErrorHandler(c *gin.Context) {
 	c.Next()
 
